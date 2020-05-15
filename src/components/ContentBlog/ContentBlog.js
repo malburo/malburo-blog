@@ -1,5 +1,6 @@
 import React from "react";
 
+import BlogList from "./BlogList/BlogList";
 import { Layout } from "antd";
 
 const { Content } = Layout;
@@ -14,7 +15,7 @@ const ContentBlog = (props) => {
         minHeight: 280,
       }}
     >
-      Content
+      <BlogList />
     </Content>
   );
 };
