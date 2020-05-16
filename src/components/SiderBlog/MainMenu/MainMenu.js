@@ -6,17 +6,19 @@ import {
   AuditOutlined,
 } from "@ant-design/icons";
 
+import { Link } from "react-router-dom";
+
 const MainMenu = (props) => {
   return (
-    <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+    <Menu theme="dark" mode="inline">
       <Menu.Item key="1" icon={<HomeOutlined />}>
-        Home
+        <Link to="/">Home</Link>
       </Menu.Item>
       <Menu.Item key="2" icon={<ProfileOutlined />}>
-        Blog
+        <Link to="/blog">Blog</Link>
       </Menu.Item>
       <Menu.Item key="3" icon={<AuditOutlined />}>
-        About Me
+        <Link to="/about">about</Link>
       </Menu.Item>
     </Menu>
   );

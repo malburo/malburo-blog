@@ -1,10 +1,13 @@
 import React from "react";
 
-import BlogList from "./BlogList/BlogList";
 import { Layout } from "antd";
+import { Switch, Route } from "react-router-dom";
+
+import Home from "../../Pages/Home/Home";
+import About from "../../Pages/About/About";
+import Blog from "../../Pages/Blog/Blog";
 
 const { Content } = Layout;
-
 const ContentBlog = (props) => {
   return (
     <Content
@@ -15,7 +18,17 @@ const ContentBlog = (props) => {
         minHeight: 280,
       }}
     >
-      <BlogList />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </Content>
   );
 };

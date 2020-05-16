@@ -4,7 +4,7 @@ import { List, Avatar, Space } from "antd";
 import { MessageOutlined, LikeOutlined, StarOutlined } from "@ant-design/icons";
 
 const listData = [];
-for (let i = 0; i < 23; i++) {
+for (let i = 0; i < 4; i++) {
   listData.push({
     href: "http://ant.design",
     title: `ant design part ${i}`,
@@ -23,23 +23,12 @@ const IconText = ({ icon, text }) => (
   </Space>
 );
 
-const BlogList = (props) => {
+const Home = (props) => {
   return (
     <List
       itemLayout="vertical"
       size="large"
-      pagination={{
-        onChange: (page) => {
-          console.log(page);
-        },
-        pageSize: 3,
-      }}
       dataSource={listData}
-      footer={
-        <div>
-          <b>ant design</b> footer part
-        </div>
-      }
       renderItem={(item) => (
         <List.Item
           key={item.title}
@@ -80,4 +69,4 @@ const BlogList = (props) => {
   );
 };
 
-export default BlogList;
+export default Home;
