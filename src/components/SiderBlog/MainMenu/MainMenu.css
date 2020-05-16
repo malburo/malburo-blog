@@ -1,0 +1,19 @@
+.ant-menu-item a {
+  color: rgba(255, 255, 255, 0.65);
+}
+.ant-menu-item:hover a {
+  color: #fff;
+}
+.ant-menu-item-selected a {
+  color: #fff;
+}
+
+.logo {
+  text-align: center;
+  color: #fff;
+  height: 32px;
+  margin: 16px;
+}
+.logo h4 {
+  color: #fff;
+}

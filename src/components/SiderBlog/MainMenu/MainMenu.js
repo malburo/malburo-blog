@@ -1,4 +1,5 @@
 import React from "react";
+import "./MainMenu.css";
 import { Menu } from "antd";
 import {
   HomeOutlined,
@@ -18,7 +19,7 @@ const MainMenu = (props) => {
         <Link to="/blog">Blog</Link>
       </Menu.Item>
       <Menu.Item key="3" icon={<AuditOutlined />}>
-        <Link to="/about">about</Link>
+        <Link to="/about">About</Link>
       </Menu.Item>
     </Menu>
   );

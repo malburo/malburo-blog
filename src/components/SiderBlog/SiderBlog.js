@@ -11,7 +11,7 @@ const SiderBlog = (props) => {
   const { collapsed } = props;
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
-      <Logo></Logo>
+      <Logo collapsed={collapsed}></Logo>
       <MainMenu></MainMenu>
     </Sider>
   );
